@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <script src="svg-inject.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container-cards{
+      display: flex;
+      align-items: center;
+      max-width: 1050px;
+      height: 99vh;
+    }
+    .sedans {
+      flex: 1;
+      background: rgb(195,103,4);
+      background: linear-gradient(90deg, rgba(195,103,4,1) 0%, rgba(227,136,38,1) 100%);
+      justify-content: center;
+      padding: 40px 90px 80px 50px;
+      border-radius: 10px 0px 0px 10px;
+    }
+    .suv {
+      flex: 1;
+      background: rgb(0,105,112);
+      background: linear-gradient(90deg, rgba(0,105,112,1) 0%, rgba(5,163,173,1) 100%);
+      justify-content: center;
+      padding: 40px 90px 80px 50px;
+      border-radius: 0px 0px 0px 0px;
+    }
+    .luxury {
+      flex: 1;
+      background: rgb(0,66,65);
+      background: linear-gradient(90deg, rgba(0,66,65,1) 0%, rgba(5,126,123,1) 100%);
+      justify-content: center;
+      padding: 40px 90px 80px 50px;
+      border-radius: 0px 10px 10px 0px;
+    }
+    .luxury {
+      flex: 1;
+    }
+    .title {
+      font-family: 'Big Shoulders Display', cursive;
+      color: #fff;
+      font-weight: 700;
+      font-size: 42px;
+      margin: 30px 0px;
+    }
+    span{
+      font-family: 'Lexend', sans-serif;
+      font-size: 15px;
+      line-height: 27px;
+      color: #fff;
+    }
+    .btn {
+      margin-top: 80px;
+    }
+    .btn-color{
+      width: 160px;
+      height: 50px;
+      border: 2px solid #fff;
+      border-radius: 60px;
+      background-color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+      cursor: pointer;
+      transition: 0.4s ease-in;
+    }
+    .btn-color:hover{
+      background-color: transparent;
+      color: #fff;
+    }
+    .yellow {
+      color:  rgb(195,103,4);
+    }
+    .darkcyan {
+      color: rgb(0,105,112);
+    }
+    .very-dark-cyan {
+      color: hsl(179, 100%, 13%);
+    }
+
+    @media screen and (max-width: 1050px) {
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+      .container-cards{
+        display: flex;
+        flex-direction: column;
+        width: 70vh;
+      }
+      .sedans, .suv, .luxury {
+        border-radius: 0px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container-cards">
+      <div class="sedans">
+        <div class="card-icon">
+          <img class="icon" src="images/icon-sedans.svg" onload="SVGINJECT(this)">
+        </div>
+        <div class="title">SEDANS</div>
+        <span>
+          Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+          or on your next road trip.
+        </span>
+        <div class="btn">
+          <button class="btn-color yellow">Learn More</button>
+        </div>
+      </div>
+
+      <div class="suv">
+        <div class="card-icon">
+          <img class="icon" src="images/icon-suvs.svg" onload="SVGINJECT(this)">
+        </div>
+        <div class="title">SUVs</div>
+        <span>
+          Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+          and off-road adventures.
+        </span>
+        <div class="btn">
+          <button class="btn-color darkcyan">Learn More</button>
+        </div>
+      </div>
+
+      <div class="luxury">
+        <div class="card-icon">
+          <img class="icon" src="images/icon-luxury.svg" onload="SVGINJECT(this)">
+        </div>
+        <div class="title">LUXURY</div>
+        <span>
+          Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+          rental and arrive in style.
+        </span>
+        <div class="btn">
+          <button class="btn-color very-dark-cyan">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
