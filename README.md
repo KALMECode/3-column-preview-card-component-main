@@ -5,7 +5,7 @@ Essa é uma solução para o desafio [3-column preview card component challenge 
 
 ### Screenshot
 
-
+![desktop-preview](https://user-images.githubusercontent.com/76540923/118167621-43c4c980-b3fd-11eb-8749-09ec815fc2ed.jpg)
 
 ### Links
 
