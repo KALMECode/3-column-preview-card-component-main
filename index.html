@@ -10,110 +10,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="style.css>
 
   <title>Frontend Mentor | 3-column preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body{
-      margin: 0;
-      padding: 0;
-    }
-    .container{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .container-cards{
-      display: flex;
-      align-items: center;
-      max-width: 1050px;
-      height: 99vh;
-    }
-    .sedans {
-      flex: 1;
-      background: rgb(195,103,4);
-      background: linear-gradient(90deg, rgba(195,103,4,1) 0%, rgba(227,136,38,1) 100%);
-      justify-content: center;
-      padding: 40px 90px 80px 50px;
-      border-radius: 10px 0px 0px 10px;
-    }
-    .suv {
-      flex: 1;
-      background: rgb(0,105,112);
-      background: linear-gradient(90deg, rgba(0,105,112,1) 0%, rgba(5,163,173,1) 100%);
-      justify-content: center;
-      padding: 40px 90px 80px 50px;
-      border-radius: 0px 0px 0px 0px;
-    }
-    .luxury {
-      flex: 1;
-      background: rgb(0,66,65);
-      background: linear-gradient(90deg, rgba(0,66,65,1) 0%, rgba(5,126,123,1) 100%);
-      justify-content: center;
-      padding: 40px 90px 80px 50px;
-      border-radius: 0px 10px 10px 0px;
-    }
-    .luxury {
-      flex: 1;
-    }
-    .title {
-      font-family: 'Big Shoulders Display', cursive;
-      color: #fff;
-      font-weight: 700;
-      font-size: 42px;
-      margin: 30px 0px;
-    }
-    span{
-      font-family: 'Lexend', sans-serif;
-      font-size: 15px;
-      line-height: 27px;
-      color: #fff;
-    }
-    .btn {
-      margin-top: 80px;
-    }
-    .btn-color{
-      width: 160px;
-      height: 50px;
-      border: 2px solid #fff;
-      border-radius: 60px;
-      background-color: #fff;
-      font-size: 16px;
-      font-weight: 600;
-      letter-spacing: 0.2px;
-      cursor: pointer;
-      transition: 0.4s ease-in;
-    }
-    .btn-color:hover{
-      background-color: transparent;
-      color: #fff;
-    }
-    .yellow {
-      color:  rgb(195,103,4);
-    }
-    .darkcyan {
-      color: rgb(0,105,112);
-    }
-    .very-dark-cyan {
-      color: hsl(179, 100%, 13%);
-    }
-
-    @media screen and (max-width: 1050px) {
-      .container {
-        display: flex;
-        flex-direction: row;
-      }
-      .container-cards{
-        display: flex;
-        flex-direction: column;
-        width: 70vh;
-      }
-      .sedans, .suv, .luxury {
-        border-radius: 0px;
-      }
-    }
-  </style>
 </head>
 <body>
   <div class="container">
